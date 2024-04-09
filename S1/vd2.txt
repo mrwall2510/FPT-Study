@@ -10,7 +10,7 @@ int main() {
     scanf("%f", &c);
     sum = a + b + c;
     Avg = sum / 3;
-    printf("Diem Tong= %f\n", sum);
-    printf("Diem Trung Binh= %f", Avg);
+    printf("Diem Tong= %0.1f\n", sum);
+    printf("Diem Trung Binh= %0.1f", Avg);
     return 0;
 }

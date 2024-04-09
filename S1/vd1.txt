@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main () {
-    int a, b;
+    float a, b;
     printf("Ta co Do C= ");
-    scanf("%d", &a);
+    scanf("%f", &a);
     b = (a * 9 / 5) + 32;
-    printf("Suy ra Do F= %d", b);
+    printf("Suy ra Do F= %0.1f", b);
     return 0;
 
 }
