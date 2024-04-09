@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, sum;
+    printf("Diem Toan: ");
+    scanf("%d", &a);
+    printf("Diem Van: ");
+    scanf("%d", &b);
+    printf("Diem Tieng Anh: ");
+    scanf("%d", &c);
+    sum = ( a + b ) * 2 + c;
+    printf("Tong diem: %d\n", sum);
+    if(sum>=36)
+    {
+        printf("Da Do Dai Hoc");
+    }
+    if(sum<=35)
+    {
+        printf("Da Truot Dai Hoc");
+    }
+    return 0;
+}
