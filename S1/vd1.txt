@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main () {
+    int a, b;
+    printf("Ta co Do C= ");
+    scanf("%d", &a);
+    b = (a * 9 / 5) + 32;
+    printf("Suy ra Do F= %d", b);
+    return 0;
+
+}
