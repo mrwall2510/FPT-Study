@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, c, sum, Avg;
+    float a, b, c, sum, Avg;
     printf("Diem Vat Ly: ");
-    scanf("%d", &a);
+    scanf("%f", &a);
     printf("Diem Hoa Hoc: ");
-    scanf("%d", &b);
+    scanf("%f", &b);
     printf("Diem Sinh Hoc: ");
-    scanf("%d", &c);
+    scanf("%f", &c);
     sum = a + b + c;
     Avg = sum / 3;
-    printf("Diem Tong= %d\n", sum);
-    printf("Diem Trung Binh= %d", Avg);
+    printf("Diem Tong= %f\n", sum);
+    printf("Diem Trung Binh= %f", Avg);
     return 0;
 }
