@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+//int tax(){
+int main() {
+    char name[50];
+    printf("Nhap ten cua ban: ");
+    scanf("%[^\n]s", name);
+    float hoursWorked;
+    printf("Nhap so gio lam viec: ");
+    scanf("%f", &hoursWorked);
+    float hourlyRate;
+    printf("\nNhap gia moi gio: ");
+    scanf("%f", &hourlyRate);
+    float totalPayment = hoursWorked * hourlyRate;
+    float tax = 0.1 * totalPayment;
+    float netPayment = totalPayment - tax;
+    printf("\nCam on ban %s da cong tac cung chungs toi.\nSau day la so tien luong ban nhan duoc:\n", name);
+    printf("------------------------------------\n");
+    printf("Tong tien luong truoc thue: $%.2f\n", totalPayment);
+    printf("So tien thue (10%%): $%.2f\n", tax);
+    printf("Tong tien luong sau thue: $%.2f\n", netPayment);
+    return 0;
+}
