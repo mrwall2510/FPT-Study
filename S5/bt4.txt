@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    float a, i, f, b, c;
+    printf("Nhap so thuc: ");
+    scanf("%f", &a);
+    b = 0.39370;
+    c = 0.083333;
+    i = b * a;
+    f = c * i;
+    printf("%.1f centimeters tuong duong %.1f inches\n", a, i);
+    printf("%.1f centimeters tuong duong %.1f feet", a, f);
+    return 0;
+}
