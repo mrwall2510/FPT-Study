@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b , c, d, e, f, g, h, sum;
+    a = 10;
+    b = 3;
+    c = 6;
+    d = 5;
+    e = 2;
+    f = 1;
+    g = 8;
+    h = pow(3,6);
+    sum = a * h * c + d - e;
+    printf("Gia tri cua bieu thuc: %d * %d ^ %d * %d + %d - %d && (%d * %d + %d / %d > %d || %d > %d) la\n", a, b, c, c, d, e, e, e, c, b, f, e, g);
+    printf("Ket qua 1  = %d\n", sum);
+    int sosanh = e * e + c / b > f || e > g;
+    printf("Ket qua 2 = %d\n", sosanh);
+
+    return 0;
+}
