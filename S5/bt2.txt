@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int a, b , c, d, e, f, g, h, i, k, l;
+    a = 2;
+    b = 3;
+    c = 6;
+    d = 12;
+    e = 4;
+    f = 7;
+    g = 3.8;
+    l = 3.3;
+    i = 10.5;
+    k = 5;
+    h = 22.0;
+    int ketqua1 = (a+b)*c;
+    printf("Gia tri bieu thuc x = (%d+%d)*%d = %d\n", a, b, c, ketqua1);
+    int ketqua2 = (c+d)/a*b;
+    printf("Gia tri bieu thuc x = (%d+%d)/%d*%d = %d\n", d, c, a, b, ketqua2);
+    int ketqua3 = (a+b)/e;
+    printf("Gia tri bieu thuc y = x = (%d+%d)/%d = %d\n", a, b, e, ketqua3);
+    int ketqua4 = a+b*(f/a);
+    printf("Gia tri bieu thuc y = %d+%d*(x=%d/%d) = %d\n", b, a, f, a, ketqua4);
+    int ketqua5 = g+l;
+    printf("Gia tri bieu thuc x = 3.8+3.3 = %d\n", ketqua5);
+    int ketqua6 = (a+b)*i;
+    printf("Gia tri bieu thuc x = (%d+%d)*10.5 = %d\n", a, b, ketqua6);
+    int ketqua7 = b*h/k;
+    printf("Gia tri bieu thuc x = %d/%d*22.0 = %d\n", b, k, ketqua7);
+    int ketqua8 = h*b/k;
+    printf("Gia tri bieu thuc x = 22.0*%d/%d = %d\n", b, k, ketqua8);
+    return 0;
+}
