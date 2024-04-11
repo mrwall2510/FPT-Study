@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int iResult, a=10, b=8, c=6, d=5, e=2;
+    iResult = a-b-c-d;
+    printf("Gia tri bieu thuc %d-%d-%d-%d = %d\n", a, b, c, d, iResult);
+    iResult = a-b+c-d;
+    printf("Gia tri bieu thuc %d-%d+%d-%d = %d\n", a, b, c, d, iResult);
+    iResult = a+b/c/d;
+    printf("Gia tri bieu thuc %d+%d/%d/%d = %d\n", a, b, c, d, iResult);
+    iResult = a+b/c*d;
+    printf("Gia tri bieu thuc %d+%d/%d*%d = %d\n", a, b, c, d, iResult);
+    iResult = a/b*c*d;
+    printf("Gia tri bieu thuc %d/%d*%d*%d = %d\n", a, b, c, d, iResult);
+    iResult = a%b/c*d;
+    printf("Gia tri bieu thuc %d%%%d/%d*%d = %d\n", a, b, c, d, iResult);
+    iResult = a%b%c%d;
+    printf("Gia tri bieu thuc %d%%%d%%%d%%%d = %d\n", a, b, c, d, iResult);
+    iResult = a-(b-c)-d;
+    printf("Gia tri bieu thuc %d-(%d-%d)-%d = %d\n", a, b, c, d, iResult);
+    iResult = a-((b-c)-d);
+    printf("Gia tri bieu thuc %d-((%d-%d)-%d) = %d\n", a, b, c, d, iResult);
+    iResult = a%(b%c)*d*e;
+    printf("Gia tri bieu thuc %d%%(%d%%%d)*%d*%d = %d\n", a, b, c, d, e, iResult);
+    iResult = a+(b-c)*d-e;
+    printf("Gia tri bieu thuc %d+(%d-%d)*%d-%d = %d\n", a, b, c, d, e, iResult);
+    iResult = (a+b)*c+d*e;
+    printf("Gia tri bieu thuc (%d+%d)*%d+%d*%d = %d\n", a, b, c, d, e, iResult);
+    iResult = (a+b)*(c/d)%e;
+    printf("Gia tri bieu thuc (%d+%d)*(%d/%d)%%%d = %d\n", a, b, c, d, e, iResult);
+
+    return 0;
+}
