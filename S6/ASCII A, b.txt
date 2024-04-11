@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int A=65, b=98;
+    printf("Ky tu A trong ASCII co gia tri la: %d\n", A);
+    printf("Ky tu b trong ASCII co gia tri la: %d", b);
+
+    return 0;
+}
