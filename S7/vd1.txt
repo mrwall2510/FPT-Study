@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a, sd;
+    printf("Enter the number: ");
+    scanf("%d", &a);
+    sd = a % 2;
+    printf("So du: %d\n", sd);
+    if (sd == 0) {
+        printf("Number is Even");
+    } else if (sd != 0) {
+            printf("Number is Odd");
+    }
+    return 0;
+}
