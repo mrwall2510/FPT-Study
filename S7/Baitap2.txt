@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Nhap so dau tien: ");
+    scanf("%d", &a);
+    printf("Nhap so thu hai: ");
+    scanf("%d", &b);
+    if (a*b > 1000) {
+        printf("Tich a va b lon hon 1000");
+    } else if ( a*b == 1000) {
+        printf("Tich a va b bang 1000");
+    } else if (a*b <1000){
+        printf("Tich a va b nho hon 1000");
+    }
+    return 0;
+}

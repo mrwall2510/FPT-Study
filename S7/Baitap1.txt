@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, sd;
+    printf("Enter the number 1: ");
+    scanf("%d", &a);
+    printf("Enter the number 2: ");
+    scanf("%d", &b);
+    if (a%b == 0) {
+        printf("a chia het cho b");
+    } else if ( a%b != 0) {
+        printf("a khong chia het cho b");
+    }
+    return 0;
+}

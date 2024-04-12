@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, hieu;
+    printf("Nhap so dau tien: ");
+    scanf("%d", &a);
+    printf("Nhap so thu hai: ");
+    scanf("%d", &b);
+    hieu = a-b;
+    printf("Hieu = %d\n", hieu);
+    if (hieu==a) {
+        printf("Hieu bang gia tri %d", a);
+    }else if (hieu==b){
+        printf("Hieu bang gia tri %d", b);
+    }else if (hieu != a || hieu != b){
+        printf("Hieu khong bang bat ki gia tri nao da duoc nhap");
+    }
+    return 0;
+}
