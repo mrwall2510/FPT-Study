@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    float weight, height;
+            do {
+                printf("Nhap can nang(kg): ");
+                scanf("%f", &weight);
+                if (weight<0||weight>1000)
+                    printf("Bi dien a nhap lai di\n");
+            } while (weight<0||weight>1000);
+        do {
+            printf("Nhap chieu cao(m): ");
+            scanf("%f", &height);
+            if(height<0||height>3)
+                printf("Bi dien a nhap lai di\n");
+        } while (height<0||height>3);
+        float bmi = weight / (height * height);
+    printf("Chi so BMI cua ban la: %.2f\n", bmi);
+        if (bmi < 18.5) {
+            printf("Ban dang o trong tinh trang gay.\n");
+        } else if (bmi < 24.9) {
+            printf("Ban dang o trong tinh trang binh thuong.\n");
+        } else if (bmi < 29.9) {
+            printf("Ban dang o trong tinh trang thua can.\n");
+        } else {
+            printf("Ban dang o trong tinh trang beo phi.\n");
+        }
+    return 0;
+}
