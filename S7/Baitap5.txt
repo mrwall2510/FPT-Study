@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float a;
+    do {
+        printf("Diem cua ban: ");
+        scanf("%f", &a);
+        if (a < 0 || a > 100)
+            printf("Loi, vui long nhap lai\n");
+    } while (a < 0 || a > 100);
+    if (a >= 75) {
+        printf("Ban dat loai A.\n");
+    } else if (60 <= a && a < 75) {
+        printf("Ban dat loai B.\n");
+    } else if (45 <= a && a < 60) {
+        printf("Ban dat loai C.\n");
+    } else if (35 <= a && a < 45) {
+        printf("Ban dat loai D.\n");
+    } else if (a < 35) {
+        printf("Ban dat loai E.\n");
+    }
+    return 0;
+}
