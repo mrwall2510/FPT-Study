@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(){
+    int soluong, tax, ms;
+    float gia, total;
+    char drink;
+    printf("Ten do uong: ");
+    scanf("%[^\n]s", &drink);
+    printf("So luong: ");
+    scanf("%d", &soluong);
+    printf("Gia: ");
+    scanf("%f", &gia);
+    int choose = 0;
+    printf("Enter Membership: ");
+    scanf("%d", &choose);
+    if(choose >= 0&&choose<=2) {
+        switch (choose) {
+            case 0:
+                printf("Discount: 0%\n");
+                break;
+            case 1:
+                printf("Discount: 5%\n");
+                ms = 0.05*gia;
+                break;
+            case 2:
+                printf("Discount: 10%\n");
+                ms = 0.1*gia;
+                break;
+        }
+    }
+    tax=0.08*(gia-ms);
+    total=gia*soluong+tax-ms;
+    printf("Total: %.1f", total);
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    float sales_amt, com;
+    printf("Enter the Sales Amount: ");
+    scanf("%f", &sales_amt);
+    if (sales_amt>=10000)
+        com = sales_amt*0.1;
+    printf("\nCommision: %.1f", com);
+    return 0;
+}
