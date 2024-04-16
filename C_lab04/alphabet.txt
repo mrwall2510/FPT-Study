@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    char letter;
+    printf("Nhap vao mot chu trong bang Alphabet(A-Z, a-z): ");
+    scanf("%c", &letter);
+    if (letter>64 && letter<91){
+        printf("Ky tu '%c' la chu in hoa !\n", letter);
+    }else if (letter>96 && letter<123){
+        printf("Ky tu '%c' la chu thuong !\n", letter);
+    }else if (letter>47 && letter<58){
+        printf("Ky ty '%c' la so !\n", letter);
+    }else if (letter>0&&letter<48||letter>57&&letter<65||letter>90&&letter<97||letter>122){
+        printf("Ky tu '%c' khong nam trong bang Alphabet va khong phai chu so<0-9> !\n", letter);
+    }
+    return 0;
+}

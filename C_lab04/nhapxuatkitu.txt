@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+    char letter;
+    printf("Nhap ki tu: ");
+    letter=getchar();
+    printf("Ma ASCII cua ki tu %c la: %d\n", letter,letter);
+}

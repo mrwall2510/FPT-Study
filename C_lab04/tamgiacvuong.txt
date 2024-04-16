@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    int a, b, c;
+    printf("Nhap so dau tien: ");
+    scanf("%d", &a);
+    printf("Nhap so thu hai: ");
+    scanf("%d", &b);
+    printf("Nhap so thu ba: ");
+    scanf("%d", &c);
+    if (a*a==b*b+c*c||b*b==a*a+c*c||c*c==a*a+b*b){
+        printf("Ba so nguyen tren lap thanh mot tam giac vuong!\n");
+    } else if (a*a!=b*b+c*c||b*b!=a*a+c*c||c*c!=a*a+b*b) {
+        printf("Ba so tren khong lap thanh mot tam giac vuong");
+    }
+    if (a*a==b*b+c*c){
+        printf("So dau tien la canh huyen!\n");
+    } else if (b*b==a*a+c*c){
+        printf("So thu hai la canh huyen!\n");
+    } else if (c*c==a*a+b*b){
+        printf("So thu ba la canh huyen!\n");
+    }
+    return 0;
+}
