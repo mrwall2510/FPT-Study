@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+    int i, j;
+    char aw;
+    do {
+        do {
+            printf("Nhap so nguyen nho hon 10: ");
+            scanf("%d", &i);
+        } while (i >= 10);
+        printf("Ta co bang cua chuong cua %d la: ", i);
+        for (j = 1; j <= 10; j++) {
+            printf("\n%d*%d=%d\n", i, j, i * j);
+        }
+        fflush(stdin);
+        printf("Ban co muon tiep tuc khong(Y/N): ");
+        scanf("%c", &aw);
+    } while (aw=='Y'||aw=='y');
+    return 0;
+}

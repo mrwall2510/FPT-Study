@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main(){
+    int i, j, k;
+    i=0;
+    printf("Nhap chieu cao tam giac: ");
+    scanf("%d", &i);
+    while (i>=2) {
+        for (j = 0; j < i; j++) {
+            printf("\n");
+            for (k = 0; k <= j; k++) {
+                printf("*");
+            }
+        }
+    break;
+    }
+    }

@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int num, result;
+    printf("Enter number: ");
+    scanf("%d", &num);
+    while (num>=0&&num<100){
+        result++;
+        printf("Enter number: ");
+        scanf("%d", &num);
+    }
+    printf("Result: %d", result);
+    return 0;
+}

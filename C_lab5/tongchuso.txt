@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+    int num, sd, total;
+    printf("Nhap so nguyen duong: ");
+    scanf("%d", &num);
+    for(;num>0;num/=10){
+        sd=num%10;
+        total+=sd;
+    }
+    printf("Tong cac chu so la %d", total);
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+    char letter;
+    do{
+        printf("\nNhap 1 ky tu tu ban phim: ");
+        scanf("%c", &letter);
+        fflush(stdin);
+    if(letter>47&&letter<58){
+        printf("Ky tu %c la chu so", letter);
+    } else if (letter>64&&letter<91||letter>96&&letter<123){
+        printf("Ky tu %c la chu cai", letter);
+    } else if (letter>32&&letter<48||letter>47&&letter<65||letter>90&&letter<97||letter>122&&letter<127){
+        printf("Ky tu %c la ky tu dac biet", letter);
+    } else if (letter==' '&&letter=='\n'&&letter=='\t'){}
+} while (letter!=' '&&letter!='\n'&&letter!='\t');
+    printf("Ky tu trang, Exit!!!");
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    int sochan;
+    for(sochan=2; sochan<=100; ++sochan){
+        if(sochan%2!=0)
+        continue;
+        printf("\tSo chan : %d\n", sochan);
+    }
+    return 0;
+}
