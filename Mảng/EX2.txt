@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    int i;
+    int intarr[5];
+    float floatarr[10]={0};
+    printf("Nhap 5 phan tu mang intArr\n");
+    for(i=0;i<5;i++) {
+        printf("Phan tu %d: ", i+1);
+        scanf("%d", &intarr[i]);
+    }
+    for(i=0;i<5;i++){
+        floatarr[i]=(float)intarr[i];
+    }
+    printf("\n5 phan tu mang intArr\n");
+    for(i=0;i<5;i++){
+        printf("\n%d\n", intarr[i]);
+    }
+    printf("\n10 phan tu mang floatArr\n");
+    for(i=0;i<10;i++){
+        printf("\n%.2f\n", floatarr[i]);
+    }
+    return 0;
+}

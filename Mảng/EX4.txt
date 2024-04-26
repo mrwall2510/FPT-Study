@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+    int num, randomNumber;
+    srand(time(0));
+    randomNumber = rand() % 20 +1;
+    do{
+        printf("Nhap so (tu 1 and 20): ");
+        scanf("%d", &num);
+        if (num>randomNumber){
+            printf("Cao hon so da cho\n");
+        }else if (num<randomNumber){
+            printf("Be hon so da cho\n");
+        } else{
+            printf("%d chinh la so da cho.\n", num);
+        }
+    }while (num != randomNumber);
+    return 0;
+}

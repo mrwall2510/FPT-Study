@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    char name[5][30];
+    int i;
+    printf("Nhap ten 5 hoc vien: \n");
+    for(i=0;i<5;i++){
+        printf("\nHoc vien %d: ", i+1);
+        scanf(" %[^\n]", name[i]);
+    }
+    printf("Danh sach 5 hoc vien:\n");
+    for(i=0;i<5;i++){
+        printf("%d: %s\n", i+1, name[i]);
+    }
+    return 0;
+}
