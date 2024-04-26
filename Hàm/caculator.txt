@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int add(int a, int b);
+int main(){
+    int num1, num2;
+    printf("Nhap so dau tien: ");
+    scanf("%d", &num1);
+    printf("Nhap so thu hai: ");
+    scanf("%d", &num2);
+    int tong = add(num1,num2);
+    printf("Tong la: %d\n", tong);
+    return 0;
+}
+int add(int a, int b){
+    printf("Tinh cong:\n");
+    printf("So hang dau tien = %d\n", a);
+    printf("So hang thu hai = %d\n", b);
+    return a+b;
+}

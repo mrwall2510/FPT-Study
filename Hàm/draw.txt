@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+// 1. Khai báo nguyên mẫu hàm
+void drawRectangle(int row);
+void drawTriangle(int row);
+
+int main() {
+    int row = 5;
+    // 2. Gọi hàm vẽ hình vuông
+    drawRectangle(row);
+    // 3. Gọi hàm vẽ tam giác
+    drawTriangle(row);
+    return 0;
+}
+// 4. Định nghĩa hàm vẽ hình vuông
+void drawRectangle(int row) {
+    printf("Hinh vuong\n");
+    for (int i = 1; i <= row; i++) {
+        for (int k = 0; k < row; k++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+// 5. Định nghĩa hàm vẽ tam giác
+void drawTriangle(int row) {
+    printf("Hinh tam giac\n");
+    for (int i = 0; i <= row; i++) {
+        for (int j = 0; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}

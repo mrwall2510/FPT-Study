@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int pheptinh(int num1, int num2, char dau){
+    int kq;
+    switch (dau) {
+        case '+':
+            kq=num1+num2;
+            break;
+        case '-':
+            kq=num1-num2;
+            break;
+        case '*':
+            kq=num1*num2;
+            break;
+        case '/':
+            kq=num1/num2;
+            break;
+        default:
+            printf("Loi cu phap\n");
+            kq=0;
+    }
+    return kq;
+}
+int main(){
+    int num1, num2;
+    char dau;
+    printf("Nhap so dau tien: ");
+    scanf("%d", &num1);
+    printf("Nhap dau(+,-,*,/): ");
+    scanf(" %c", &dau);
+    printf("Nhap so thu hai: ");
+    scanf("%d", &num2);
+    int kq= pheptinh(num1,num2,dau);
+    printf("Ket Qua: %d\n", kq);
+    return 0;
+}
