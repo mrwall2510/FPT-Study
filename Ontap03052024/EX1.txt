@@ -1,0 +1,23 @@
+#include <stdio.h>
+int total(int sl, float gb){
+    float total=sl*gb;
+    float tax= total * 0.1;
+    if(total>=200){
+        total*=0.95;
+    } else if(total>=100){
+        total*=0.98;
+    }
+    return total+tax;
+}
+int main(){
+    int sl;
+    float gb;
+    printf("Nhap so luong muon mua: ");
+    scanf("%d", &sl);
+    printf("Nhap gia ban: ");
+    scanf("%f", &gb);
+    float tong= total(sl,gb);
+    printf("Tong tien: %.2f", tong);
+    return 0;
+}
+

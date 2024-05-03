@@ -1,0 +1,21 @@
+#include <stdio.h>
+void khoang(int n1, int n2){
+    for(int a=n1;a<=n2;a++){
+        if(a%50==0){
+            printf("Boi cua 50 trong khoang %d den %d la: %d\n", n1, n2, a);
+        }
+    }
+}
+int main(){
+    int n1, n2;
+    printf("Enter first number: ");
+    scanf("%d", &n1);
+    printf("Enter second number: ");
+    scanf("%d", &n2);
+    if(n1<n2){
+        khoang(n1,n2);
+    } else {
+        khoang(n2, n1);
+    }
+    return 0;
+}
