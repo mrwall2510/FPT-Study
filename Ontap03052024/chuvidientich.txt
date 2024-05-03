@@ -1,0 +1,28 @@
+#include <stdio.h>
+float chuvi (float width, float height);
+float dientich (float width, float height);
+int main (){
+    float width, height;
+    do {
+    printf("Chieu dai: ");
+    scanf("%f", &height);
+    printf("Chieu rong: ");
+    scanf("%f", &width);
+    if(width>=height||width<=0||height<=0){
+        printf("Khong hop le vui long nhap lai\n");
+    }
+    } while (width>=height||width<=0||height<=0);
+    float cv= chuvi(width,height);
+    float dt= dientich(width,height);
+    printf("Chu vi: %.1f\n", cv);
+    printf("Dien tich: %.1f\n", dt);
+    return 1;
+}
+float chuvi(float width, float height){
+    float cv=(width+height)*2;
+    return cv;
+}
+float dientich(float width, float height){
+    float dt=width*height;
+    return dt;
+}
