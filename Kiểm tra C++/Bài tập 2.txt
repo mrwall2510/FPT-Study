@@ -1,0 +1,23 @@
+//Hoàng Mạnh Tường-T2403M
+#include <stdio.h>
+//Hàm tính tiền điện
+float Crystaltiendien(int soKWh) {
+    float ebill;
+    if (soKWh<=50) {
+        ebill=soKWh*500;
+    } else if (soKWh<=100) {
+        ebill=(soKWh-50)*700+50*500;
+    } else {
+        ebill =(soKWh-100)*900+50*500+50*700;
+    }
+    return ebill;
+}
+int main() {
+    int sokWh1=30, sokWh2=80, sokWh3=120;
+    printf("==================BILL===================\n");
+    //Gọi hàm
+    printf("Electricity bill with %d kWh la: %.1f$\n", sokWh1, Crystaltiendien(sokWh1));
+    printf("Electricity bill with %d kWh la: %.1f$\n", sokWh2, Crystaltiendien(sokWh2));
+    printf("Electricity bill with %d kWh la: %.1f$\n", sokWh3, Crystaltiendien(sokWh3));
+    return 0;
+}
